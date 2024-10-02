@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}Ayuda{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Centro de Ayuda</h2>
+    
+    <!-- Sección de Introducción -->
+    <section class="mt-4">
+        <h4>Introducción</h4>
+        <p>
+            Bienvenido al módulo de ayuda. Aquí encontrarás respuestas a las preguntas más frecuentes y guías para usar nuestra aplicación de manera efectiva.
+            Si no encuentras lo que buscas, no dudes en contactarnos.
+        </p>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="mt-4">
+        <h4>Preguntas Frecuentes</h4>
+        <div id="faq-accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cómo puedo crear un nuevo proyecto?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#faq-accordion">
+                    <div class="card-body">
+                        Para crear un nuevo proyecto, dirígete al módulo de Proyectos y haz clic en el botón "Crear instrumento de validación". Completa el formulario y guarda tu proyecto.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cómo edito un proyecto existente?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#faq-accordion">
+                    <div class="card-body">
+                        Para editar un proyecto, accede a la lista de proyectos y selecciona el proyecto que deseas editar. A continuación, haz clic en el botón "Editar".
+                    </div>
+                </div>
+            </div>
+            <!-- Puedes agregar más preguntas siguiendo la estructura anterior -->
+        </div>
+    </section>
+
+    <!-- Sección de Guías de Usuario -->
+    <section class="mt-4">
+        <h4>Guías de Usuario</h4>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#">Cómo crear un nuevo instrumento de validación</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Cómo agregar preguntas a tu instrumento</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Cómo gestionar tus proyectos</a>
+            </li>
+            <!-- Puedes agregar más guías según sea necesario -->
+        </ul>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="mt-4">
+        <h4>Contacto</h4>
+        <p>Si necesitas asistencia adicional, puedes contactarnos a través de los siguientes medios:</p>
+        <ul>
+            <li>Correo electrónico: <a href="info@ideice.gob.do">info@ideice.gob.do</a></li>
+            <li>Teléfono: +1 (809) 686-7152</li>
+            <li>Horario de atención: Lunes a Viernes, de 8:00 a.m. a 4:00 p.m.</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Videos Tutoriales -->
+    <section class="mt-4">
+        <h4>Videos Tutoriales</h4>
+        <p>Proximamente...</p>
+        {% comment %} <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div> {% endcomment %}
+        <!-- Agrega más videos si es necesario -->
+    </section>
+</div>
+{% endblock %}

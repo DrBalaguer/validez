@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Instrumento{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Editar Instrumento: {{ instrumento.nombre }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a href="{% url 'proyectos' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

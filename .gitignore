@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django specific files
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables file
+.env
+
+# Virtual environment
+venv/
+myenv/
+
+# VSCode files (if you're using VSCode)
+.vscode/
+
+# PyCharm files (if you're using PyCharm)
+.idea/
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Python packages
+*.egg-info/
+
+#estructura de proyecto
+estructura_proyecto.html
+generate_structure.py

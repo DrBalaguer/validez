@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}App Validez de Instrumentos por Expertos{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-9 fw-bold">Bienvenidos/as a la App Validez de Instrumentos por Expertos</h1>
+        <p class="lead mt-3">Esta aplicación está diseñada para facilitar la creación, validación y gestión de instrumentos de investigación de manera profesional y efectiva.</p>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">¿Qué ofrecemos?</h5>
+                    <p class="card-text">Herramientas para crear, validar y administrar instrumentos de investigación, facilitando la toma de decisiones informadas en tus proyectos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">¿Cómo funciona?</h5>
+                    <p class="card-text">Podrás gestionar tus proyectos de validación, agregar preguntas a los instrumentos, y obtener reportes detallados sobre el estado de tu investigación.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">¿Quiénes pueden usarla?</h5>
+                    <p class="card-text">La aplicación está diseñada para profesionales, investigadores y cualquier persona interesada en la validación de instrumentos de investigación.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 text-center">
+        <h2>Instrucciones de Uso</h2>
+        <p class="text-muted">Para comenzar, selecciona la opción de "Proyectos" en el menú superior y sigue las instrucciones para crear y gestionar tus instrumentos de investigación.</p>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">¿Por qué usar esta aplicación?</h5>
+                    <ul>
+                        <li>Facilita el proceso de validación de instrumentos de investigación.</li>
+                        <li>Ofrece un sistema intuitivo y fácil de usar.</li>
+                        <li>Proporciona reportes detallados para la toma de decisiones.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Recursos de ayuda</h5>
+                    <p>Si necesitas ayuda, visita el módulo de <a href="{% url 'ayuda' %}">Ayuda</a> donde encontrarás respuestas a preguntas frecuentes y guías detalladas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
